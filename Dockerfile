@@ -1,7 +1,7 @@
 FROM debian:jessie
 
 WORKDIR /var/www/html
-VOLUME /var/www
+VOLUME /var/www/html
 
 
 #Install base debian
@@ -52,9 +52,7 @@ EXPOSE 80
 RUN curl -sS --insecure https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Config Apache2
-ADD sites-enabled/vhost.conf /etc/apache2/sites-enabled/
 RUN a2enmod rewrite
-
 
 # Clear Trash
 RUN rm -rf /usr/share/doc
