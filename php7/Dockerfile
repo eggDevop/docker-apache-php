@@ -19,7 +19,6 @@ RUN apt-get update && apt-get install -y \
 RUN echo 'deb http://packages.dotdeb.org jessie all' > /etc/apt/sources.list.d/dotdeb.list \
     && wget https://www.dotdeb.org/dotdeb.gpg && apt-key add dotdeb.gpg  && rm dotdeb.gpg
 
-
 RUN apt-get update && apt-get -y install \
 	apache2 \
 	php7.0 \
@@ -45,6 +44,7 @@ RUN apt-get update && apt-get -y install \
 	php7.0-mcrypt \
 	php7.0-mbstring \
 	php7.0-gd
+
 
 EXPOSE 80
 
