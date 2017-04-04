@@ -51,6 +51,10 @@ EXPOSE 80
 # Install composer
 RUN curl -sS --insecure https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+#install unitest
+RUN wget https://phar.phpunit.de/phpunit.phar -O /usr/local/bin/phpunit && \
+	chmod +x /usr/local/bin/phpunit
+
 # Config Apache2
 RUN a2enmod rewrite
 
