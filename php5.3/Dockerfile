@@ -9,3 +9,6 @@ RUN yum install -y httpd \
 	php-mysql
 
 EXPOSE 80
+
+#Config Apache2 Mod_Rewrite
+ADD httpd/httpd.conf /etc/httpd/conf/

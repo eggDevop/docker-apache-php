@@ -17,7 +17,9 @@ ADD yum_repo/remi.repo /etc/yum.repos.d/remi.repo
 
 RUN yum -y upgrade php*
 
-
 EXPOSE 80
+
+#Config Apache2 Mod_Rewrite
+ADD httpd/httpd.conf /etc/httpd/conf/
 
 
