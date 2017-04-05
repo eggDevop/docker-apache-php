@@ -44,6 +44,7 @@ RUN apt-get update && apt-get -y install \
 	php7.0-common \
 	php7.0-curl \
 	php7.0-mcrypt \
+	php7.0-zip \
 	php7.0-phalcon
 
 EXPOSE 80
