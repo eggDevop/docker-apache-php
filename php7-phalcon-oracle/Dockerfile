@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y \
 	apt-transport-https \
 	curl \
 	vim \
+	zip \
 	lsb-release \ 
 	build-essential 
 
