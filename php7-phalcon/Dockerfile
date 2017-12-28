@@ -36,6 +36,7 @@ RUN apt-get update && apt-get -y install \
     php7.0-xdebug \
 	php7.0-cgi \ 
 	php7.0-fpm \
+	php7.0-mbstring \
 	php7.0-mysql \
 	php7.0-cli \        
 	php7.0-json \      
